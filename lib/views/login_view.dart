@@ -33,11 +33,11 @@ class _LoginPageState extends State<LoginPage> {
         title: const Text('Login'),
       ),
       body: Column(
-        Sizedbox(
-          width: 0,
-          height: 70,
-        ),
         children: [
+          SizedBox(
+            width: 0,
+            height: 50,
+          ),
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: TextField(
