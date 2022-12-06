@@ -30,12 +30,56 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Register'),
+        title: const Text('Create Account'),
       ),
       body: Column(
         children: [
+          SizedBox(
+            width: 0,
+            height: 20,
+          ),
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(10.0),
+            child: const TextField(
+              decoration: InputDecoration(
+                hintText: 'First Name',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: const TextField(
+              decoration: InputDecoration(
+                hintText: 'Last Name',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: const TextField(
+              decoration: InputDecoration(
+                hintText: 'Age',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: const TextField(
+              decoration: InputDecoration(
+                hintText: 'Gender',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: const TextField(
+              decoration: InputDecoration(
+                hintText: 'Address',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
             child: TextField(
                 controller: _email,
                 enableSuggestions: false,
@@ -46,7 +90,7 @@ class _RegisterState extends State<Register> {
                 )),
           ),
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(10.0),
             child: TextField(
               controller: _password,
               obscureText: true,
@@ -57,7 +101,20 @@ class _RegisterState extends State<Register> {
               ),
             ),
           ),
-          TextButton(onPressed: () async {}, child: const Text('Register')),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: TextField(
+              controller: _password,
+              obscureText: true,
+              enableSuggestions: false,
+              autocorrect: false,
+              decoration: const InputDecoration(
+                hintText: 'Confirm Password',
+              ),
+            ),
+          ),
+          TextButton(
+              onPressed: () async {}, child: const Text('Create Account')),
         ],
       ),
     );

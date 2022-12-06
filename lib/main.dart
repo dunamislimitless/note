@@ -10,19 +10,19 @@ void main() {
       backgroundColor: Colors.white38,
       primarySwatch: Colors.green,
     ),
-    home: const HomePage(),
+    home: const Register(),
   ));
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+// class HomePage extends StatelessWidget {
+//   const HomePage({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Page'),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Home Page'),
+//       ),
+//     );
+//   }
+// q}
